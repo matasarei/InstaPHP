@@ -59,6 +59,7 @@ class InstaPHP {
      * @param string $path
      */
     function setCachePath($path) {
+        !$path && $this->_cachePath = null;
         if (is_writable($path)) {
             $this->_cachePath = $path;
         } else {
