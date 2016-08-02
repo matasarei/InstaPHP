@@ -4,10 +4,10 @@ Instagram API for PHP
 ## Before you start
 You are limited to 5000 requests per hour per access_token or client_id overall. That's why you should set up writable directory to allow caching ("./cache/" by default):
 ```php
-//use cache for 10 minutes and than refresh data
+//use cache for 10 minutes and then refresh data
 $insta = new InstaPHP($username, $accessToken, 10, './cache/');
 ```
-But, you also can init it without cache support:
+But you also can init it without cache support:
 ```php
 //no cache
 $insta = new InstaPHP($username, $accessToken, false, false);
